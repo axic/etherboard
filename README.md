@@ -15,3 +15,27 @@ NOTE: I didn't actually run this on the real network, but it compiles and looks 
 Pull requests and improvements are welcome.
 
 Also check out the [initial announcement on Reddit](https://www.reddit.com/r/ethereum/comments/3rzyp6/etherboard_an_image_powered_by_the_blockchain/).
+
+## Optimisation
+
+Note also that there were no attempts made to make this code optimal on execution and storage costs. After all it is for educational reasons.
+
+Perhaps a possible way to make this more optimal is by using the below layout:
+
+```js
+mapping (uint => address) owners;
+mapping (uint => uint) colors;
+mapping (uint => uint) prices;
+
+# Get the address of the pixel
+# x means the columns, y means the rows
+function getPos(uint x, uint y) internal returns (uint) {
+    return y*1000+x;
+}
+```
+
+The key for the mapping is the position given by *getPos*.
+
+## Update
+
+The original author has since published [the source code](http://etherboard.io/contract), but at the same time also changed some of the public API and the price calculation rules.
