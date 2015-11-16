@@ -16,6 +16,8 @@ Pull requests and improvements are welcome.
 
 Also check out the [initial announcement on Reddit](https://www.reddit.com/r/ethereum/comments/3rzyp6/etherboard_an_image_powered_by_the_blockchain/).
 
+Note: **I am not related to etherboard.io**, just liked the idea of an editable image (and not talking about the pyramid scheme).
+
 ## Optimisation
 
 Note also that there were no attempts made to make this code optimal on execution and storage costs. After all it is for educational reasons.
